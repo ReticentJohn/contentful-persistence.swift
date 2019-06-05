@@ -1,7 +1,3 @@
-#!/usr/bin/ruby
-
-require 'dotenv/load'
-
 Pod::Spec.new do |spec|
   spec.name             = "ContentfulPersistenceSwift"
   spec.version          = ENV['CONTENTFUL_PERSISTENCE_VERSION']
