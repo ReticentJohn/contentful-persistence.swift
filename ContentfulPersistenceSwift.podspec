@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = "ContentfulPersistenceSwift"
-  spec.version          = ENV['CONTENTFUL_PERSISTENCE_VERSION']
+  spec.version          = '0.13.1'
   spec.summary          = "Simplified persistence for the Contentful Swift SDK."
   spec.homepage         = "https://github.com/contentful/contentful-persistence.swift/"
   spec.social_media_url = 'https://twitter.com/contentful'
