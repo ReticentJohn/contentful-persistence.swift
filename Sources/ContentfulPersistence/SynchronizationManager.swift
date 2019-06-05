@@ -498,7 +498,7 @@ public class SynchronizationManager: PersistenceIntegration {
                                           with entry: Entry) {
 
         // Key-Value Coding only works with NSObject types as it's an Obj-C API.
-        guard let persistable = entryPersistable as? NSManagedObject else { return }
+        guard let persistable = entryPersistable as? NSObject else { return }
 
         let mapping = propertyMapping(for: type, and: entry.fields)
 
