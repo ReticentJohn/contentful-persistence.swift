@@ -138,9 +138,7 @@ public class SynchronizationManager: PersistenceIntegration {
 
     public var syncToken: String? {
         var syncToken: String?
-        persistentStore.performAndWait {
-            syncToken = self.fetchSpace().syncToken
-        }
+        syncToken = persistentStore.syncToken()
         return syncToken
     }
 

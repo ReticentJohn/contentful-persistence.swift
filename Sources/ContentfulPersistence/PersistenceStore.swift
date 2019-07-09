@@ -77,4 +77,6 @@ public protocol PersistenceStore {
     func performBlock(block: @escaping () -> Void)
 
     func performAndWait(block: @escaping () -> Void)
+    
+    func syncToken() -> String?
 }
